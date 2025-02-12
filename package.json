@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "We bouwen hier een keycloak template met het NL design system.",
   "scripts": {
-    "build": "jar --create --file output/keycloak-nl-design-system.jar theme/ META-INF/",
-    "compile": "webpack --config webpack.config.js"
+    "build:keycloak": "jar --create --file output/keycloak-nl-design-system.jar theme/ META-INF/",
+    "build:webpack": "webpack --config webpack.config.js",
+    "build:all": "webpack --config webpack.config.js && jar --create --file output/keycloak-nl-design-system.jar theme/ META-INF/"
   },
   "author": "",
   "devDependencies": {
